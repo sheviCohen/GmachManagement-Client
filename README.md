@@ -25,5 +25,7 @@ npm run dev
 ## פריסה (Render – Static Site)
 - Build Command: `npm install && npm run build`
 - Publish Directory: `dist`
-- משתנה סביבה: `VITE_API_URL` = כתובת ה-API ב-Render
-- הקובץ `public/_redirects` דואג שרענון בכתובת פנימית (כמו `/loans`) יעבוד.
+- משתנה סביבה: `VITE_API_URL` = `https://gmach-api.onrender.com` (נקבע בזמן הבנייה; שינוי דורש פריסה מחדש)
+- כלל Rewrite בדשבורד של Render (Redirects/Rewrites): Source `/*`, ‏Destination `/index.html`, ‏Action `Rewrite`. הוא דואג שרענון בכתובת פנימית (כמו `/loans`) יעבוד. (הקובץ `public/_redirects` נתמך ב-Netlify ולא ב-Render.)
+
+כתובת האתר החי: https://gmach-client.onrender.com
